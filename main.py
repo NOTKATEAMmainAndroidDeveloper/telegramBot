@@ -12,7 +12,8 @@ bot = telebot.TeleBot('6497484445:AAG7mnXcuvhdyM7GcaEfbkDEKBj6sesE4yA')
 def send_text_messages():
     bot.send_message(id_channel, random.choice(data))
 
-
+schedule.every().day.at("10:00").do(send_text_messages)
+schedule.every().day.at("11:00").do(send_text_messages)
 schedule.every().day.at("12:00").do(send_text_messages)
 schedule.every().day.at("13:00").do(send_text_messages)
 schedule.every().day.at("14:00").do(send_text_messages)
