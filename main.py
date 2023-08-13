@@ -28,4 +28,4 @@ schedule.every().day.at("21:00").do(send_text_messages)
 # Бесконечный цикл для проверки расписания
 while True:
     schedule.run_pending()
-    time.sleep(10)
+    time.sleep(15)
